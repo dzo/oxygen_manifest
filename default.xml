@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="korg"
-           fetch="git://android.git.kernel.org/"
+           fetch="http://android.git.eu.kernel.org/"
            review="review.source.android.com" />
   <default revision="gingerbread"
            remote="korg" />
 
-  <project path="build" name="platform/build">
+  <remote name="github" fetch="git://github.com/" />
+
+  <project path="build" name="devnull-project/android_build" remote="github">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="platform/bionic" />
-  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
-  <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" />
-  <project path="cts" name="platform/cts" />
+  <project path="bionic" name="devnull-project/android_bionic" remote="github" />
+  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="github" />
   <project path="dalvik" name="platform/dalvik" />
   <project path="development" name="platform/development" />
   <project path="device/common" name="device/common" />
-  <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" />
-  <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" />
-  <project path="device/htc/common" name="device/htc/common" />
-  <project path="device/htc/passion" name="device/htc/passion" />
-  <project path="device/htc/passion-common" name="device/htc/passion-common" />
-  <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/crespo" name="device/samsung/crespo" />
-  <project path="device/samsung/crespo4g" name="device/samsung/crespo4g" />
+  <project path="device/htc/bravo" name="devnull-project/android_device_htc_bravo" remote="github" />
+  <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" remote="github" />
+  <project path="device/samsung/c1-common" name="devnull-project/android_device_samsung_c1-common" remote="github" />
+  <project path="device/samsung/galaxys2" name="devnull-project/android_device_samsung_galaxys2" remote="github" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/astl" name="platform/external/astl" />
   <project path="external/bison" name="platform/external/bison" />
@@ -34,6 +29,7 @@
   <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" />
+  <project path="external/busybox" name="devnull-project/android_external_busybox" remote="github" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/chromium" name="platform/external/chromium" />
   <project path="external/clearsilver" name="platform/external/clearsilver" />
@@ -41,7 +37,7 @@
   <project path="external/dhcpcd" name="platform/external/dhcpcd" />
   <project path="external/dnsmasq" name="platform/external/dnsmasq" />
   <project path="external/dropbear" name="platform/external/dropbear" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" />
+  <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" remote="github" />
   <project path="external/easymock" name="platform/external/easymock" />
   <project path="external/elfcopy" name="platform/external/elfcopy" />
   <project path="external/elfutils" name="platform/external/elfutils" />
@@ -60,7 +56,7 @@
   <project path="external/icu4c" name="platform/external/icu4c" />
   <project path="external/iproute2" name="platform/external/iproute2" />
   <project path="external/ipsec-tools" name="platform/external/ipsec-tools" />
-  <project path="external/iptables" name="platform/external/iptables" />
+  <project path="external/iptables" name="CyanogenMod/android_external_iptables" revision="master" remote="github" />
   <project path="external/jdiff" name="platform/external/jdiff" />
   <project path="external/jhead" name="platform/external/jhead" />
   <project path="external/jpeg" name="platform/external/jpeg" />
@@ -80,19 +76,18 @@
   <project path="external/neven" name="platform/external/neven" />
   <project path="external/nist-sip" name="platform/external/nist-sip" />
   <project path="external/oauth" name="platform/external/oauth" />
-  <project path="external/openssl" name="platform/external/openssl" />
+  <project path="external/openssl" name="CyanogenMod/android_external_openssl" remote="github" />
   <project path="external/oprofile" name="platform/external/oprofile" />
   <project path="external/ping" name="platform/external/ping" />
   <project path="external/ppp" name="platform/external/ppp" />
   <project path="external/proguard" name="platform/external/proguard" />
   <project path="external/protobuf" name="platform/external/protobuf" />
   <project path="external/qemu" name="platform/external/qemu" revision="tools_r7" />
-  <project path="external/quake" name="platform/external/quake" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
-  <project path="external/skia" name="platform/external/skia" />
+  <project path="external/skia" name="devnull-project/android_external_skia" remote="github" />
   <project path="external/sonivox" name="platform/external/sonivox" />
   <project path="external/speex" name="platform/external/speex" />
-  <project path="external/sqlite" name="platform/external/sqlite" />
+  <project path="external/sqlite" name="CyanogenMod/android_external_sqlite" remote="github" />
   <project path="external/srec" name="platform/external/srec" />
   <project path="external/stlport" name="platform/external/stlport" />
   <project path="external/strace" name="platform/external/strace" />
@@ -103,78 +98,68 @@
   <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/v8" name="platform/external/v8" />
   <project path="external/webkit" name="platform/external/webkit" />
-  <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" />
-  <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
+  <project path="external/wpa_supplicant_6" name="devnull-project/android_external_wpa_supplicant_6" remote="github" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
-  <project path="external/yaffs2" name="platform/external/yaffs2" />
+  <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" remote="github" />
   <project path="external/zlib" name="platform/external/zlib" />
-  <project path="frameworks/base" name="platform/frameworks/base" />
+  <project path="frameworks/base" name="devnull-project/android_frameworks_base" remote="github" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
-  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
+  <project path="hardware/broadcom/wlan" name="devnull-project/android_hardware_broadcom_wlan" remote="github" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
+  <project path="hardware/libhardware_legacy" name="devnull-project/android_hardware_libhardware_legacy" remote="github" />
   <project path="hardware/msm7k" name="platform/hardware/msm7k" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" />
-  <project path="hardware/ril" name="platform/hardware/ril" />
-  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
-  <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
+  <project path="hardware/ril" name="devnull-project/android_hardware_ril" remote="github" />
   <project path="libcore" name="platform/libcore" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/AccountsAndSyncSettings" name="platform/packages/apps/AccountsAndSyncSettings" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
-  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
+  <project path="packages/apps/Browser" name="devnull-project/android_packages_apps_browser" remote="github" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
-  <project path="packages/apps/Camera" name="platform/packages/apps/Camera" />
+  <project path="packages/apps/Camera" name="devnull-project/android_packages_apps_camera" remote="github" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
+  <project path="packages/apps/CMScreenshot" name="CyanogenMod/android_packages_apps_CMScreenshot" remote="github" />
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
   <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
-  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
   <project path="packages/apps/Gallery3D" name="platform/packages/apps/Gallery3D" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
-  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
+  <project path="packages/apps/Launcher2" name="devnull-project/android_packages_apps_launcher2" remote="github" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
-  <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
-  <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
-  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="devnull-project/android_packages_apps_settings" remote="github" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
-  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
+  <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="github" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
-  <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
-  <project path="packages/experimental" name="platform/packages/experimental" />
-  <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" />
-  <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" />
-  <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" />
+  <project path="packages/inputmethods/LatinIME" name="CyanogenMod/android_packages_inputmethods_LatinIME" remote="github" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
-  <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" />
+  <project path="packages/providers/DownloadProvider" name="devnull-project/android_packages_providers_downloadprovider" remote="github" />
   <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
-  <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider" />
   <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" />
   <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" />
-  <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" />
-  <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" />
-  <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
   <project path="prebuilt" name="platform/prebuilt" />
   <project path="sdk" name="platform/sdk" revision="tools_r7" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="platform/system/core" />
+  <project path="system/core" name="devnull-project/android_system_core" remote="github" />
   <project path="system/extras" name="platform/system/extras" />
+  <project path="system/extras/su" name="ChainsDD/su-binary" revision="master" remote="github" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
-  <project path="system/vold" name="platform/system/vold" />
-  <project path="system/wlan/ti" name="platform/system/wlan/ti" />
+  <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" />
+  <project path="vendor/devnull" name="devnull-project/android_vendor_devnull" remote="github" />
+  <project path="vendor/google" name="devnull-project/android_vendor_google" remote="github" />
+  <project path="vendor/htc" name="devnull-project/android_vendor_htc" remote="github" />
+  <project path="vendor/samsung" name="koush/proprietary_vendor_samsung" remote="github" />
 
 </manifest>
