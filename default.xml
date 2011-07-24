@@ -149,8 +149,8 @@
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" />
-  <project path="vendor/devnull" name="devnull-project/android_vendor_devnull" remote="sartorius" />
-  <project path="vendor/google" name="devnull-project/android_vendor_google" remote="sartorius" />
+  <project path="vendor/devnull" name="devnull-project/android_vendor_devnull" remote="github" />
+  <project path="vendor/google" name="devnull-project/android_vendor_google" remote="github" />
   <project path="vendor/samsung" name="koush/proprietary_vendor_samsung" remote="github" />
 
 </manifest>
