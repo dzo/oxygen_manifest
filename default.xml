@@ -121,7 +121,7 @@
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/Gallery3D" name="platform/packages/apps/Gallery3D" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
-  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
+  <project path="packages/apps/Launcher2" name="devnull-project/android_packages_apps_launcher2" remote="github" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
@@ -153,6 +153,7 @@
   <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" />
   <project path="vendor/devnull" name="devnull-project/android_vendor_devnull" remote="github" />
   <project path="vendor/google" name="devnull-project/android_vendor_google" remote="github" />
+  <project path="vendor/htc" name="devnull-project/android_vendor_htc" remote="github" />
   <project path="vendor/samsung" name="koush/proprietary_vendor_samsung" remote="github" />
 
 </manifest>
