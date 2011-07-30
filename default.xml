@@ -16,7 +16,7 @@
   <project path="dalvik" name="platform/dalvik" />
   <project path="development" name="platform/development" />
   <project path="device/common" name="device/common" />
-  <project path="device/htc/bravo" name="devnull-project/android_device_htc/bravo" remote="github" />
+  <project path="device/htc/bravo" name="devnull-project/android_device_htc_bravo" remote="github" />
   <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" remote="github" />
   <project path="device/samsung/c1-common" name="devnull-project/android_device_samsung_c1-common" remote="github" />
   <project path="device/samsung/galaxys2" name="devnull-project/android_device_samsung_galaxys2" remote="github" />
