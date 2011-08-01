@@ -162,5 +162,7 @@
   <project path="vendor/google" name="devnull-project/android_vendor_google" remote="github" />
   <project path="vendor/htc" name="devnull-project/android_vendor_htc" remote="github" />
   <project path="vendor/samsung" name="koush/proprietary_vendor_samsung" remote="github" />
-
+  <project path="vendor/tmobile/apps/ThemeChooser" name="tmobile/themes-platform-vendor-tmobile-apps-ThemeChooser" revision="master" remote="github" />
+  <project path="vendor/tmobile/libs/com.tmobile.themes" name="tmobile/themes-platform-vendor-tmobile-libs-com.tmobile.themes" revision="master" remote="github" />
+  <project path="vendor/tmobile/providers/ThemeManager" name="tmobile/themes-platform-vendor-tmobile-providers-ThemeManager" revision="master" remote="github" />
 </manifest>
