@@ -3,7 +3,7 @@
   <remote  name="korg"
            fetch="http://android.git.eu.kernel.org/"
            review="review.source.android.com" />
-  <default revision="gingerbread"
+  <default revision="gingerbread" tag="android-2.3.5_r1" 
            remote="korg" />
 
   <remote name="github" fetch="git://github.com/" />
@@ -11,18 +11,18 @@
   <project path="build" name="devnull-project/android_build" remote="github">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="devnull-project/android_bionic" remote="github" />
-  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="github" />
-  <project path="dalvik" name="platform/dalvik" />
+  <project path="bionic" name="dzo/bionic" remote="github" />
+  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" revision="gingerbread" remote="github" />
+  <project path="dalvik" name="platform/dalvik" revision="gingerbread" />
   <project path="development" name="platform/development" />
   <project path="device/common" name="device/common" />
-  <project path="device/htc/bravo" name="devnull-project/android_device_htc_bravo" remote="github" />
-  <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" remote="github" />
+  <project path="device/htc/bravo" name="devnull-project/android_device_htc_bravo" revision="gingerbread" remote="github" />
+  <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" revision="gingerbread" remote="github" />
   <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/c1-common" name="devnull-project/android_device_samsung_c1-common" remote="github" />
-  <project path="device/samsung/crespo" name="devnull-project/android_device_samsung_crespo" remote="github" />
-  <project path="device/samsung/crespo4g" name="devnull-project/android_device_samsung_crespo4g" remote="github" />
-  <project path="device/samsung/galaxys2" name="devnull-project/android_device_samsung_galaxys2" remote="github" />
+  <project path="device/samsung/c1-common" name="devnull-project/android_device_samsung_c1-common" revision="gingerbread" remote="github" />
+  <project path="device/samsung/crespo" name="devnull-project/android_device_samsung_crespo" revision="gingerbread" remote="github" />
+  <project path="device/samsung/crespo4g" name="devnull-project/android_device_samsung_crespo4g" revision="gingerbread" remote="github" />
+  <project path="device/samsung/galaxys2" name="devnull-project/android_device_samsung_galaxys2" revision="gingerbread" remote="github" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/bison" name="platform/external/bison" />
   <project path="external/blktrace" name="platform/external/blktrace" />
@@ -31,7 +31,7 @@
   <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" />
-  <project path="external/busybox" name="devnull-project/android_external_busybox" remote="github" />
+  <project path="external/busybox" name="devnull-project/android_external_busybox" revision="gingerbread" remote="github" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/chromium" name="platform/external/chromium" />
   <project path="external/clearsilver" name="platform/external/clearsilver" />
@@ -39,7 +39,7 @@
   <project path="external/dhcpcd" name="platform/external/dhcpcd" />
   <project path="external/dnsmasq" name="platform/external/dnsmasq" />
   <project path="external/dropbear" name="platform/external/dropbear" />
-  <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" remote="github" />
+  <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" revision="gingerbread" remote="github" />
   <project path="external/easymock" name="platform/external/easymock" />
   <project path="external/elfcopy" name="platform/external/elfcopy" />
   <project path="external/elfutils" name="platform/external/elfutils" />
@@ -76,7 +76,7 @@
   <project path="external/neven" name="platform/external/neven" />
   <project path="external/nist-sip" name="platform/external/nist-sip" />
   <project path="external/oauth" name="platform/external/oauth" />
-  <project path="external/openssl" name="CyanogenMod/android_external_openssl" remote="github" />
+  <project path="external/openssl" name="CyanogenMod/android_external_openssl" revision="gingerbread" remote="github" />
   <project path="external/oprofile" name="platform/external/oprofile" />
   <project path="external/ping" name="platform/external/ping" />
   <project path="external/ppp" name="platform/external/ppp" />
@@ -84,10 +84,10 @@
   <project path="external/protobuf" name="platform/external/protobuf" />
   <project path="external/qemu" name="platform/external/qemu" revision="tools_r7" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
-  <project path="external/skia" name="devnull-project/android_external_skia" remote="github" />
+  <project path="external/skia" name="devnull-project/android_external_skia" revision="gingerbread" remote="github" />
   <project path="external/sonivox" name="platform/external/sonivox" />
   <project path="external/speex" name="platform/external/speex" />
-  <project path="external/sqlite" name="CyanogenMod/android_external_sqlite" remote="github" />
+  <project path="external/sqlite" name="CyanogenMod/android_external_sqlite" revision="gingerbread" remote="github" />
   <project path="external/srec" name="platform/external/srec" />
   <project path="external/stlport" name="platform/external/stlport" />
   <project path="external/strace" name="platform/external/strace" />
@@ -97,20 +97,20 @@
   <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/v8" name="platform/external/v8" />
   <project path="external/webkit" name="platform/external/webkit" />
-  <project path="external/wpa_supplicant_6" name="devnull-project/android_external_wpa_supplicant_6" remote="github" />
+  <project path="external/wpa_supplicant_6" name="devnull-project/android_external_wpa_supplicant_6" revision="gingerbread" remote="github" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
-  <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" remote="github" />
+  <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" revision="gingerbread" remote="github" />
   <project path="external/zlib" name="platform/external/zlib" />
-  <project path="frameworks/base" name="adamg-xda/oxygen_frameworks_base" remote="github" />
+  <project path="frameworks/base" name="dzo/frameworks_base" revision="gingerbread" remote="github" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="hardware/broadcom/wlan" name="devnull-project/android_hardware_broadcom_wlan" remote="github" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" />
-  <project path="hardware/libhardware_legacy" name="adamg-xda/oxygen_hardware_libhardware_legacy" remote="github" />
-  <project path="hardware/msm7k" name="adamg-xda/oxygen_hardware_msm7k" remote="github" />
-  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
-  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" />
-  <project path="hardware/ril" name="devnull-project/android_hardware_ril" remote="github" />
+  <project path="hardware/libhardware" name="dzo/libhardware" revision="master" remote="github" />
+  <project path="hardware/libhardware_legacy" name="dzo/hardware_libhardware_legacy" revision="master" remote="github" />
+  <project path="hardware/msm7k" name="dzo/hardware_msm7k" revision="gb" remote="github" />
+  <project path="hardware/qcom/gps" name="dzo/qcom_gps" revision="master" remote="github" />
+  <project path="hardware/qcom/media" name="dzo/qcom_media" revision="master" remote="github" />
+  <project path="hardware/ril" name="dzo/hardware_ril" revision="master" remote="github" />
   <project path="libcore" name="platform/libcore" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/AccountsAndSyncSettings" name="platform/packages/apps/AccountsAndSyncSettings" />
