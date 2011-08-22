@@ -160,6 +160,7 @@
   <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" />
   <project path="vendor/devnull" name="adamg-xda/oxygen_vendor_devnull" remote="github" />
   <project path="vendor/google" name="devnull-project/android_vendor_google" remote="github" />
+  <project path="vendor/oxygen" name="dzo/vendor_oxygen" remote="github" revision="master" />
   <project path="vendor/htc" name="devnull-project/android_vendor_htc" remote="github" />
   <project path="vendor/samsung" name="koush/proprietary_vendor_samsung" remote="github" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="tmobile/themes-platform-vendor-tmobile-apps-ThemeChooser" revision="master" remote="github" />
