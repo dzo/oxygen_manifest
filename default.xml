@@ -23,6 +23,7 @@
   <project path="device/samsung/crespo" name="devnull-project/android_device_samsung_crespo" revision="gingerbread" remote="github" />
   <project path="device/samsung/crespo4g" name="devnull-project/android_device_samsung_crespo4g" revision="gingerbread" remote="github" />
   <project path="device/samsung/galaxys2" name="devnull-project/android_device_samsung_galaxys2" revision="gingerbread" remote="github" />
+  <project path="device/huawei/u8800" name="dzo/android_device_huawei_u8800" revision="master" remote="github" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/bison" name="platform/external/bison" />
   <project path="external/blktrace" name="platform/external/blktrace" />
@@ -158,7 +159,6 @@
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" />
-  <project path="vendor/devnull" name="adamg-xda/oxygen_vendor_devnull" remote="github" />
   <project path="vendor/google" name="devnull-project/android_vendor_google" remote="github" />
   <project path="vendor/oxygen" name="dzo/vendor_oxygen" remote="github" revision="master" />
   <project path="vendor/htc" name="devnull-project/android_vendor_htc" remote="github" />
