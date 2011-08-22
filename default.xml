@@ -131,10 +131,9 @@
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
-  <project path="packages/apps/OxygenSettings" name="adamg-xda/oxygen_packages_apps_oxygensettings" remote="github" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
   <project path="packages/apps/Phone" name="adamg-xda/oxygen_packages_apps_phone" remote="github" />
-  <project path="packages/apps/Settings" name="devnull-project/android_packages_apps_settings" remote="github" />
+  <project path="packages/apps/Settings" name="dzo/android_packages_apps_settings" remote="github" revision="gb"/>
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="github" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
