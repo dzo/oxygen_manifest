@@ -133,7 +133,7 @@
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
-  <project path="packages/apps/Phone" name="oxygen-rom/oxygen_packages_apps_phone" remote="github" />
+  <project path="packages/apps/Phone" name="oxygen-rom/android_packages_apps_phone" remote="github" />
   <project path="packages/apps/Settings" name="dzo/android_packages_apps_settings" revision="gb" remote="github" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="github" />
