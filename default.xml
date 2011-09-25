@@ -3,7 +3,7 @@
   <remote  name="korg"
            fetch="git://codeaurora.org/"
            review="review.source.android.com" />
-  <default revision="gingerbread" tag="android-2.3.5_r1" 
+  <default revision="refs/tags/android-2.3.5_r1" 
            remote="korg" />
 
   <remote name="github" fetch="git://github.com/" />
