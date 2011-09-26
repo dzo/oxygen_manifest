@@ -131,7 +131,7 @@
   <project path="packages/apps/Launcher2" name="devnull-project/android_packages_apps_launcher2" remote="github" revision="gingerbread" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
-  <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
+  <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" revision="gingerbread"/>
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
   <project path="packages/apps/Phone" name="oxygen-rom/android_packages_apps_phone" remote="github" revision="gingerbread"/>
   <project path="packages/apps/Settings" name="dzo/android_packages_apps_settings" revision="gb" remote="github" />
