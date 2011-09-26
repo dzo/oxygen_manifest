@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="korg"
-           fetch="git://codeaurora.org/"
+           fetch="git://git.omapzoom.org"
            review="review.source.android.com" />
   <default revision="refs/tags/android-2.3.5_r1" 
            remote="korg" />
 
   <remote name="github" fetch="git://github.com/" />
 
-  <project path="build" name="dzo/build" remote="github">
+  <project path="build" name="dzo/build" remote="github" revision="gingerbread">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="dzo/bionic" remote="github" />
+  <project path="bionic" name="dzo/bionic" remote="github" revision="gingerbread" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" revision="gingerbread" remote="github" />
   <project path="dalvik" name="platform/dalvik" revision="gingerbread" />
   <project path="development" name="platform/development" />
@@ -32,7 +32,7 @@
   <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" />
-  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="gingerbread"/>
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/chromium" name="platform/external/chromium" />
   <project path="external/clearsilver" name="platform/external/clearsilver" />
@@ -105,7 +105,7 @@
   <project path="frameworks/base" name="dzo/frameworks_base" revision="gingerbread" remote="github" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
-  <project path="hardware/broadcom/wlan" name="devnull-project/android_hardware_broadcom_wlan" remote="github" />
+  <project path="hardware/broadcom/wlan" name="devnull-project/android_hardware_broadcom_wlan" remote="github" revision="gingerbread" />
   <project path="hardware/libhardware" name="dzo/libhardware" revision="master" remote="github" />
   <project path="hardware/libhardware_legacy" name="dzo/hardware_libhardware_legacy" revision="master" remote="github" />
   <project path="hardware/msm7k" name="dzo/hardware_msm7k" revision="gb" remote="github" />
@@ -119,32 +119,32 @@
   <project path="packages/apps/Browser" name="devnull-project/android_packages_apps_browser" remote="github" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
-  <project path="packages/apps/Camera" name="devnull-project/android_packages_apps_camera" remote="github" />
+  <project path="packages/apps/Camera" name="devnull-project/android_packages_apps_camera" remote="github" revision="gingerbread"/>
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
-  <project path="packages/apps/CMScreenshot" name="CyanogenMod/android_packages_apps_CMScreenshot" remote="github" />
+  <project path="packages/apps/CMScreenshot" name="CyanogenMod/android_packages_apps_CMScreenshot" remote="github" revision="gingerbread" />
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
   <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
-  <project path="packages/apps/FM" name="CyanogenMod/android_packages_apps_FM" remote="github" />
+  <project path="packages/apps/FM" name="CyanogenMod/android_packages_apps_FM" remote="github" revision="gingerbread" />
   <project path="packages/apps/Gallery3D" name="platform/packages/apps/Gallery3D" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
-  <project path="packages/apps/Launcher2" name="devnull-project/android_packages_apps_launcher2" remote="github" />
+  <project path="packages/apps/Launcher2" name="devnull-project/android_packages_apps_launcher2" remote="github" revision="gingerbread" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
-  <project path="packages/apps/Phone" name="oxygen-rom/android_packages_apps_phone" remote="github" />
+  <project path="packages/apps/Phone" name="oxygen-rom/android_packages_apps_phone" remote="github" revision="gingerbread"/>
   <project path="packages/apps/Settings" name="dzo/android_packages_apps_settings" revision="gb" remote="github" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
-  <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="github" />
+  <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="github" revision="gingerbread" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
-  <project path="packages/apps/Torch" name="CyanogenMod/android_packages_apps_Torch" remote="github" />
-  <project path="packages/inputmethods/LatinIME" name="CyanogenMod/android_packages_inputmethods_LatinIME" remote="github" />
+  <project path="packages/apps/Torch" name="CyanogenMod/android_packages_apps_Torch" remote="github" revision="gingerbread" />
+  <project path="packages/inputmethods/LatinIME" name="CyanogenMod/android_packages_inputmethods_LatinIME" remote="github" revision="gingerbread" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
-  <project path="packages/providers/DownloadProvider" name="devnull-project/android_packages_providers_downloadprovider" remote="github" />
+  <project path="packages/providers/DownloadProvider" name="devnull-project/android_packages_providers_downloadprovider" remote="github" revision="gingerbread"/>
   <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
   <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" />
   <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
@@ -158,11 +158,11 @@
   <project path="system/extras/su" name="ChainsDD/su-binary" revision="master" remote="github" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" />
-  <project path="vendor/google" name="devnull-project/android_vendor_google" remote="github" />
+  <project path="system/vold" name="dzo/vold" remote="github" revision="gingerbread"/>
+  <project path="vendor/google" name="devnull-project/android_vendor_google" remote="github" revision="gingerbread"/>
   <project path="vendor/oxygen" name="dzo/vendor_oxygen" remote="github" revision="master" />
-  <project path="vendor/htc" name="devnull-project/android_vendor_htc" remote="github" />
-  <project path="vendor/samsung" name="koush/proprietary_vendor_samsung" remote="github" />
+  <project path="vendor/htc" name="devnull-project/android_vendor_htc" remote="github" revision="gingerbread"/>
+  <project path="vendor/samsung" name="koush/proprietary_vendor_samsung" remote="github" revision="gingerbread"/>
   <project path="vendor/tmobile/apps/ThemeChooser" name="tmobile/themes-platform-vendor-tmobile-apps-ThemeChooser" revision="master" remote="github" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="tmobile/themes-platform-vendor-tmobile-libs-com.tmobile.themes" revision="master" remote="github" />
   <project path="vendor/tmobile/providers/ThemeManager" name="tmobile/themes-platform-vendor-tmobile-providers-ThemeManager" revision="master" remote="github" />
