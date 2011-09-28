@@ -119,7 +119,7 @@
   <project path="packages/apps/Browser" name="devnull-project/android_packages_apps_browser" remote="github" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
-  <project path="packages/apps/Camera" name="devnull-project/android_packages_apps_camera" remote="github" revision="gingerbread"/>
+  <project path="packages/apps/Camera" name="dzo/packages_apps_camera" remote="github" revision="gingerbread"/>
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
   <project path="packages/apps/CMScreenshot" name="CyanogenMod/android_packages_apps_CMScreenshot" remote="github" revision="gingerbread" />
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
