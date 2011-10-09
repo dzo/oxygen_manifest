@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="korg"
-           fetch="git://git.omapzoom.org"
+           fetch="http://aosp.schiznik.net/"
            review="review.source.android.com" />
-  <default revision="refs/tags/android-2.3.5_r1" 
+  <default revision="gingerbread" 
            remote="korg" />
 
   <remote name="github" fetch="git://github.com/" />
@@ -16,13 +16,13 @@
   <project path="dalvik" name="platform/dalvik" revision="gingerbread" />
   <project path="development" name="platform/development" />
   <project path="device/common" name="device/common" />
-  <project path="device/htc/bravo" name="devnull-project/android_device_htc_bravo" revision="gingerbread" remote="github" />
+  <project path="device/htc/bravo" name="oxygen-rom/android_device_htc_bravo" revision="gingerbread" remote="github" />
   <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" revision="gingerbread" remote="github" />
   <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/c1-common" name="devnull-project/android_device_samsung_c1-common" revision="gingerbread" remote="github" />
-  <project path="device/samsung/crespo" name="devnull-project/android_device_samsung_crespo" revision="gingerbread" remote="github" />
-  <project path="device/samsung/crespo4g" name="devnull-project/android_device_samsung_crespo4g" revision="gingerbread" remote="github" />
-  <project path="device/samsung/galaxys2" name="devnull-project/android_device_samsung_galaxys2" revision="gingerbread" remote="github" />
+  <project path="device/samsung/c1-common" name="oxygen-rom/android_device_samsung_c1-common" revision="gingerbread" remote="github" />
+  <project path="device/samsung/crespo" name="oxygen-rom/android_device_samsung_crespo" revision="gingerbread" remote="github" />
+  <project path="device/samsung/crespo4g" name="oxygen-rom/android_device_samsung_crespo4g" revision="gingerbread" remote="github" />
+  <project path="device/samsung/galaxys2" name="oxygen-rom/android_device_samsung_galaxys2" revision="gingerbread" remote="github" />
   <project path="device/huawei/u8800" name="dzo/android_device_huawei_u8800" revision="master" remote="github" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/bison" name="platform/external/bison" />
@@ -85,7 +85,7 @@
   <project path="external/protobuf" name="platform/external/protobuf" />
   <project path="external/qemu" name="platform/external/qemu" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
-  <project path="external/skia" name="devnull-project/android_external_skia" revision="gingerbread" remote="github" />
+  <project path="external/skia" name="oxygen-rom/android_external_skia" revision="gingerbread" remote="github" />
   <project path="external/sonivox" name="platform/external/sonivox" />
   <project path="external/speex" name="platform/external/speex" />
   <project path="external/sqlite" name="CyanogenMod/android_external_sqlite" revision="da617f6f0df7bfe09a26bad9a65e6f75987c4cfe" remote="github" />
@@ -105,7 +105,7 @@
   <project path="frameworks/base" name="dzo/frameworks_base" revision="gingerbread" remote="github" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
-  <project path="hardware/broadcom/wlan" name="devnull-project/android_hardware_broadcom_wlan" remote="github" revision="gingerbread" />
+  <project path="hardware/broadcom/wlan" name="oxygen-rom/android_hardware_broadcom_wlan" remote="github" revision="gingerbread" />
   <project path="hardware/libhardware" name="dzo/libhardware" revision="master" remote="github" />
   <project path="hardware/libhardware_legacy" name="dzo/hardware_libhardware_legacy" revision="master" remote="github" />
   <project path="hardware/msm7k" name="dzo/hardware_msm7k" revision="gb" remote="github" />
@@ -116,7 +116,7 @@
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/AccountsAndSyncSettings" name="platform/packages/apps/AccountsAndSyncSettings" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
-  <project path="packages/apps/Browser" name="devnull-project/android_packages_apps_browser" remote="github" />
+  <project path="packages/apps/Browser" name="oxygen-rom/android_packages_apps_browser" remote="github" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
   <project path="packages/apps/Camera" name="dzo/packages_apps_camera" remote="github" revision="gingerbread"/>
@@ -128,7 +128,7 @@
   <project path="packages/apps/FM" name="CyanogenMod/android_packages_apps_FM" remote="github" revision="gingerbread" />
   <project path="packages/apps/Gallery3D" name="platform/packages/apps/Gallery3D" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
-  <project path="packages/apps/Launcher2" name="devnull-project/android_packages_apps_launcher2" remote="github" revision="gingerbread" />
+  <project path="packages/apps/Launcher2" name="oxygen-rom/android_packages_apps_launcher2" remote="github" revision="gingerbread" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" revision="gingerbread"/>
@@ -144,7 +144,7 @@
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
-  <project path="packages/providers/DownloadProvider" name="devnull-project/android_packages_providers_downloadprovider" remote="github" revision="gingerbread"/>
+  <project path="packages/providers/DownloadProvider" name="oxygen-rom/android_packages_providers_downloadprovider" remote="github" revision="gingerbread"/>
   <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
   <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" />
   <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
@@ -159,7 +159,7 @@
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="dzo/vold" remote="github" revision="gingerbread"/>
-  <project path="vendor/google" name="devnull-project/android_vendor_google" remote="github" revision="gingerbread"/>
+  <project path="vendor/google" name="oxygen-rom/android_vendor_google" remote="github" revision="gingerbread"/>
   <project path="vendor/oxygen" name="dzo/vendor_oxygen" remote="github" revision="master" />
   <project path="vendor/htc" name="devnull-project/android_vendor_htc" remote="github" revision="gingerbread"/>
   <project path="vendor/samsung" name="koush/proprietary_vendor_samsung" remote="github" revision="gingerbread"/>
