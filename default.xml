@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="korg"
-           fetch="http://aosp.schiznik.net/"
+           fetch="https://android.googlesource.com/"
            review="review.source.android.com" />
-  <default revision="gingerbread" 
-           remote="korg" />
+  <default revision="refs/tags/android-2.3.7_r1" 
+           remote="korg" 
+           sync-j="4" />
 
   <remote name="github" fetch="git://github.com/" />
 
@@ -97,7 +98,7 @@
   <project path="external/tinyxml" name="platform/external/tinyxml" />
   <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/v8" name="platform/external/v8" />
-  <project path="external/webkit" name="android/platform_external_webkit" remote="github"/>
+  <project path="external/webkit" name="platform/external/webkit"/>
   <project path="external/wpa_supplicant_6" name="dzo/external_wpa_supplicant_6" revision="gingerbread" remote="github" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" revision="gingerbread" remote="github" />
@@ -116,7 +117,7 @@
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/AccountsAndSyncSettings" name="platform/packages/apps/AccountsAndSyncSettings" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
-  <project path="packages/apps/Browser" name="oxygen-rom/android_packages_apps_browser" remote="github" />
+  <project path="packages/apps/Browser" name="oxygen-rom/android_packages_apps_browser" remote="github" revision="gingerbread"/>
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
   <project path="packages/apps/Camera" name="dzo/packages_apps_camera" remote="github" revision="gingerbread"/>
@@ -161,7 +162,7 @@
   <project path="system/vold" name="dzo/vold" remote="github" revision="gingerbread"/>
   <project path="vendor/google" name="oxygen-rom/android_vendor_google" remote="github" revision="gingerbread"/>
   <project path="vendor/oxygen" name="dzo/vendor_oxygen" remote="github" revision="master" />
-  <project path="vendor/htc" name="devnull-project/android_vendor_htc" remote="github" revision="gingerbread"/>
+  <project path="vendor/htc" name="oxygen-rom/android_vendor_htc" remote="github" revision="gingerbread"/>
   <project path="vendor/samsung" name="koush/proprietary_vendor_samsung" remote="github" revision="gingerbread"/>
   <project path="vendor/tmobile/apps/ThemeChooser" name="tmobile/themes-platform-vendor-tmobile-apps-ThemeChooser" revision="master" remote="github" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="tmobile/themes-platform-vendor-tmobile-libs-com.tmobile.themes" revision="master" remote="github" />
